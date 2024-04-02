@@ -4,6 +4,7 @@
 //   - Exemplo de saída: A + B é menor que C.
 
 int a, b, c;
+string saida;
 
 Console.Write("A: ");
 a = Convert.ToInt16(Console.ReadLine());
@@ -12,11 +13,14 @@ b = Convert.ToInt16(Console.ReadLine());
 Console.Write("C: ");
 c = Convert.ToInt16(Console.ReadLine());
 
-if ((a+b) < c)
-{
-    Console.WriteLine("A + B é menor que C");
-}
-else
-{
-    Console.WriteLine("A + B é maior que C");
-}
+saida = (a + b) > c ? "A + B é maior que C" : "A + B é menor que C";
+Console.WriteLine(saida);
+
+//if ((a+b) < c)
+//{
+//    Console.WriteLine("A + B é menor que C");
+//}
+//else
+//{
+//    Console.WriteLine("A + B é maior que C");
+//}
